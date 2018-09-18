@@ -1,0 +1,31 @@
+{
+  "name": "rnStackOverflow",
+  "version": "0.0.1",
+  "private": true,
+  "scripts": {
+    "start": "node node_modules/react-native/local-cli/cli.js start",
+    "test": "jest"
+  },
+  "dependencies": {
+    "immutable": "^3.8.2",
+    "react": "16.5.0",
+    "react-native": "0.57.0",
+    "react-native-splash-screen": "^3.1.1",
+    "react-navigation": "^2.14.2",
+    "react-redux": "^5.0.7",
+    "redux": "^4.0.0",
+    "rn-splash-screen": "^5.2.0"
+  },
+  "devDependencies": {
+    "babel-jest": "23.6.0",
+    "jest": "23.6.0",
+    "metro-react-native-babel-preset": "0.45.3",
+    "prop-types": "^15.6.2",
+    "react-immutable-proptypes": "^2.1.0",
+    "react-test-renderer": "16.5.0",
+    "redux-logger": "^3.0.6"
+  },
+  "jest": {
+    "preset": "react-native"
+  }
+}

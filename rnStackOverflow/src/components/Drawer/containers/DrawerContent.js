@@ -1,6 +1,6 @@
 import React from 'react';
-import { Text, View, ScrollView, TouchableHighlight } from 'react-native';
-import { Description, Title } from '../../TextComponents/index';
+import { View, TouchableHighlight } from 'react-native';
+import { Title } from '../../TextComponents/index';
 import LogOutPage from '../../../scenes/LogOutPage/containers/LogOutPage';
 import MainPage from '../../../scenes/MainPage/containers/MainPage';
 import StackOverflowPage from '../../../scenes/StackOverflowPage/containers/StackOverflowPage';
@@ -24,7 +24,18 @@ export default class DrawerContent extends React.PureComponent {
         );
     }
 
+    /**
+     * Navigate to mainPage
+     */
     goToMainPage = () => this.props.navigation.navigate(MainPage.routeKey);
+
+    /**
+     * Navigate to stackOverflow page.
+     */
     goToStackOverflowPage = () => this.props.navigation.navigate(StackOverflowPage.routeKey);
+
+    /**
+     * Navigate to logOut page.
+     */
     goToLogOutPage = () => this.props.navigation.navigate(LogOutPage.routeKey);
 }

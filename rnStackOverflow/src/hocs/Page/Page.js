@@ -24,8 +24,7 @@ export function asPage(PageInstance) {
         renderPageWithLocalization = texts => <PageInstance {...this.props} texts={texts} />;
     }
 
-    const mapStateToProps = ({ localization}) => ({
-    });
+    const mapStateToProps = ({ localization }) => ({});
 
     const mapDispatchToProps = dispatch => bindActionCreators(actions, dispatch);
 

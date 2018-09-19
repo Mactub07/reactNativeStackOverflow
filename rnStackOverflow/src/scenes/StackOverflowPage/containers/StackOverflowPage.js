@@ -9,7 +9,7 @@ import styles from '../styles/styles';
 import { HeaderLeft, HeaderMenuImage } from '../../../components/Header';
 import { fromJS } from 'immutable';
 import Icon from '../../../components/Icon/Icon';
-import {constants} from '../../../constants';
+import { constants } from '../../../constants';
 
 class StackOverflowPage extends React.PureComponent {
     static routeKey = 'StackOverflowPage';
@@ -70,7 +70,8 @@ class StackOverflowPage extends React.PureComponent {
             </View>
 
         );
-    }
+    };
+
     keyExtractor = item => item.link
 
 }

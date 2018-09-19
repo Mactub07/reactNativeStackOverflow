@@ -1,0 +1,17 @@
+{
+    "hello": "Привет, Мир",
+    "changeLocalization": "Вы хотите использовать русский язык?",
+    "authTitle": "Aвторизация",
+    "mainTitle": "Главная",
+    "LogOutTitle": "Выход",
+    "StackOverflowTitle": "СтекОверфлоу",
+    "wellCome": "Добро пожаловать !!!",
+    "inputUserNamePlaceHolder" : "никнейм",
+    "inputPasswordPlaceHolder" : "пароль",
+    "inputRequired" : "поле обязательное",
+    "AttentionAuthTitle": "Внимание",
+    "AttentionAuthText": "Вы должны заполнить все обязательные поля",
+    "AuthSubmitButtonText": "Сохранить",
+    "Hello": "Привет",
+    "GoodBye": "Прощайте !"
+}

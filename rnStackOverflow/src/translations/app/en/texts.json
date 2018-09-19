@@ -1,0 +1,17 @@
+{
+    "hello": "hello",
+    "changeLocalization": "Would you like to use russian language?",
+    "authTitle": "Auth",
+    "mainTitle": "Home",
+    "LogOutTitle": "LogOut",
+    "StackOverflowTitle": "StackOverflow",
+    "wellCome": "Welcome !!!",
+    "inputUserNamePlaceHolder" : "username",
+    "inputPasswordPlaceHolder" : "password",
+    "inputRequired" : "field is required",
+    "AttentionAuthTitle": "Attention",
+    "AttentionAuthText": "You should fill all required inputs",
+    "AuthSubmitButtonText": "Submit",
+    "Hello": "Hello",
+    "GoodBye": "GoodBye !!!"
+}

@@ -1,49 +1,25 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React from 'react';
+import { Provider } from 'react-redux';
+import store from './src/store/configureStore';
+import NavigationService from './src/services/Navigation/NavigationService';
+import Router from './src/components/Router';
+import { LocalizationProvider } from './src/services/Localization';
+import { defaultTexts, defaultLocale } from './src/translations';
+import { YellowBox } from 'react-native';
 
-import React, {Component} from 'react';
-import {Platform, StyleSheet, Text, View} from 'react-native';
+export default class App extends React.Component {
+    componentDidMount() {
+        // react-native warning bug , see https://github.com/facebook/react-native/issues/20841
+        YellowBox.ignoreWarnings([ 'Require cycle:' ]);
+    }
 
-const instructions = Platform.select({
-  ios: 'Press Cmd+R to reload,\n' + 'Cmd+D or shake for dev menu',
-  android:
-    'Double tap R on your keyboard to reload,\n' +
-    'Shake or press menu button for dev menu',
-});
-
-type Props = {};
-export default class App extends Component<Props> {
-  render() {
-    return (
-      <View style={styles.container}>
-        <Text style={styles.welcome}>Welcome to React Native!</Text>
-        <Text style={styles.instructions}>To get started, edit App.js</Text>
-        <Text style={styles.instructions}>{instructions}</Text>
-      </View>
-    );
-  }
+    render() {
+        return (
+            <Provider store={store}>
+                    <LocalizationProvider defaultTexts={defaultTexts} defaultLocale={defaultLocale}>
+                        <Router ref={navigatorRef => NavigationService.setTopLevelNavigator(navigatorRef)} />
+                    </LocalizationProvider>
+            </Provider>
+        );
+    }
 }
-
-const styles = StyleSheet.create({
-  container: {
-    flex: 1,
-    justifyContent: 'center',
-    alignItems: 'center',
-    backgroundColor: '#F5FCFF',
-  },
-  welcome: {
-    fontSize: 20,
-    textAlign: 'center',
-    margin: 10,
-  },
-  instructions: {
-    textAlign: 'center',
-    color: '#333333',
-    marginBottom: 5,
-  },
-});

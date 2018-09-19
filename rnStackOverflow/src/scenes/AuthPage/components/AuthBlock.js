@@ -46,7 +46,7 @@ export default class AuthBlock extends React.Component {
                     <View style={styles.inputStyle}>
                         <TextInput
                             onChangeText={password => this.setState({ password })}
-                            placeholder={this.props.texts.inputUserNamePlaceHolder}
+                            placeholder={this.props.texts.inputPasswordPlaceHolder}
                             placeholderTextColor={constants.COLOR_ACCENT}
                             secureTextEntry
                             autoCapitalize={'none'}
